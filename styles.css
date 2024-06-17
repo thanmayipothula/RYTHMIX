@@ -1,0 +1,82 @@
+body{
+    background-color:rgb(24, 23, 23);
+    color:white;
+  }
+  
+  #popular{
+      display:grid;
+      gap:30px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      margin-left: 20px;
+     }
+     div.bottom{
+     position:fixed;
+     bottom:0;
+      background-color: black;
+      height:90px;
+      width:100%;
+     }
+     .bottom input{
+      text-align: center;
+      width:300px;
+     }
+     .play{
+      font-size: 20px;
+     }
+    
+     i{
+      cursor:pointer;
+  }
+  .container-fluid-wrap{
+      display:grid;
+      grid-template-columns:repeat(auto-fill, minmax(150px,1fr));
+      gap:.25rem;
+      margin-top:1 rem;
+    }
+  
+    div.card{
+      background-color: #232323;
+      color: rgb(230, 127, 11);
+      width:150px; 
+      height: 200px;
+    }
+   
+  div.card:hover{
+    width:160px;
+    height:200px;
+  }
+    .card-title{
+      opacity: 0.7;
+    }
+  .card-title span {
+    margin-left:50px;
+    opacity:0;
+  }
+  .card-body:hover .heart{
+      opacity:1;
+      margin-left:50px;
+   
+  }
+  
+  .gif img{
+    opacity:0;
+  }
+  
+  @media screen and (max-width: 992px) {
+    #popular{
+    display:grid;
+    gap:30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 20px;
+   }
+  }
+  
+  /* On screens that are 600px wide or less, the background color is olive */
+  @media screen and (max-width: 600px) {
+  #popular{
+    display:grid;
+    gap:30px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+   }
+  }
